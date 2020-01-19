@@ -14,7 +14,7 @@ with open("intents.json") as file:
     
 try:
 	with open("data.pickle", "rb") as f:
-		words, labels, training, output = pickle.load(f)
+		words, categories, training, output = pickle.load(f)
 except:
     
 
@@ -87,8 +87,12 @@ net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, len(output[0]), activation = "softmax")
 net = tflearn.regression(net)
 model = tflearn.DNN(net)
-model.fit(training, output, n_epoch=1000, batch_size = 8, show_metric=True)
-model.save("model.tflearn")
+
+try:
+	model.load("model.tflearn")
+except:		
+	model.fit(training, output, n_epoch=1000, batch_size = 8, show_metric=True)
+	model.save("model.tflearn")
 
 def ai_chat():
 	print("Hi, I am an automated ITU chat bot, ask me anything (type quit to stop)!")
