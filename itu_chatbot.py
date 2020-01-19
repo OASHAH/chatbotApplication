@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[34]:
-
-
-
-
-
-# In[152]:
-
-
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
@@ -102,7 +90,7 @@ model = tflearn.DNN(net)
 model.fit(training, output, n_epoch=1000, batch_size = 8, show_metric=True)
 model.save("model.tflearn")
 
-def Ai_chat():
+def ai_chat():
 	print("Hi, I am an automated ITU chat bot, ask me anything (type quit to stop)!")
 	print("Consult itu.edu.pk if i fail to address your queries.")
 	while True:
@@ -110,7 +98,7 @@ def Ai_chat():
 		if inp.lower() == "quit":
 			break
 		results = model.predict([bag_of_words(inp, words)])
-		results_index = np.argmax(results) #THe response with the highest probability
+		results_index = np.argmax(results) #The category with the highest probability
 		tag = labels[results_index]
 
 
@@ -123,27 +111,6 @@ def Ai_chat():
 		print(rd.choice(responses)) #AI giving response
 
 ai_chat()
-
-
-# In[ ]:
-
-
-
-
-
-# In[33]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
