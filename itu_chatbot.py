@@ -99,7 +99,7 @@ def ai_chat():
 			break
 		results = model.predict([bag_of_words(inp, words)])
 		results_index = np.argmax(results) #The category with the highest probability
-		tag = labels[results_index]
+		tag = categories[results_index]
 
 
 		for tg in data["intents"]:
