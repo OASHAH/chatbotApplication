@@ -1,0 +1,58 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya","bye", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["I hope you are content with using my service","Sad to see you go :(","Talk to you later", "Goodbye!","Well I can't go anywhere unless you enter 'quit' to exit the chat."],
+         "context_set": ""
+        },
+        {"tag": "purpose",
+         "patterns": ["what do you do", "how can you help", "what is your use?", "how to use this", "I need information", "Can you give me information"],
+         "responses": ["I help regarding matters ITU, if you need more help, visit the website.", "I am a ITU chatbot, I assist (or atleast try to) in itu relevant queries", "Ask me anything itu related"],
+         "context_set": ""
+        },
+        {"tag": "Sports",
+         "patterns": ["Sports", "What's the deal with sports here?","Is there any sports society", "How to join the sports society", "is there sports here?", "What kind of sports are here?"],
+         "responses": ["You can play table tennis at 7th floor, and there is volley ball and badminton at backside parking of arfa techonology park"],
+         "context_set": ""
+        },
+        {"tag": "UniversityLife",
+         "patterns": ["How is the University life", "is there campus life","how is campus life","What kind of culture do we have here?", "How is the Uni life", "How is the University environment here?","Are there extracurricular activities", "What kind of acitvities are here?","Is there any ground?", "How is the university mahool","You can get this information at itu.edu.pk"],
+         "responses": ["We have student led drama/sports/iee/environmental societies. That's all.","I'm sorry to say that Univeristy Life here is non existent", "Unfortunately, campus life will dissapoint You","There is lack of traditional campus life here, so keep that in mind if you're applying here.", "Not that I know of"],
+         "context_set": ""
+        },
+        {"tag": "extracurricular",
+         "patterns": ["What kind of acitvities are here?", "University facilities", "Tell about University featurese","What facilities do we have here"],
+         "responses": ["We host Numeral Labs like Computer, Intelligent machine", "Electronics lab. WE have Library at 6th floor and Lincolin corner at 2nd floor.","You can get this information at itu.edu.pk"],
+         "context_set": ""
+        },
+        {"tag": "library",
+         "patterns": ["Is there a library?","where is the library?","Do you have a library","Does this univeristy has a library"],
+         "responses": ["There is a library at 6th Floor, the library is moderately sized.","Library is at 6th floor, you can get more info at itu.library.edu.pk"],
+         "context_set": ""
+        },
+        {"tag": "cafeteria",
+         "patterns": ["Do we have restaurants in itu","Where do we get lunch","Can i buy food here","Where does the univeristy has food?","What kind of restaurants are here?"],
+         "responses": ["We have a big cafeteria with 2 restaurants and ice cream parlour at 2nd floor, There is a designated smoking area at 3rd floor and a vending machine at 6th floors entrance"],
+         "context_set": ""
+        },
+         {"tag": "photocopy",
+         "patterns": ["Where can i get a photocopy?","Where can i get Printouts","Is there a place for printing","Can i photocopy in itu"],
+         "responses": ["You can get printouts from lincolin corner","go to lincolin corner and use their computer"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you","whats your name?"],
+         "responses": ["I am a bot.","I'm bot!","I'm a bot, you can call me anything you want.","Call me anything"],
+         "context_set": ""
+        }, 
+        {"tag": "hours",
+         "patterns": ["when is the university open","what are your hours","hours of operation"],
+         "responses": ["The university has no fixed timings, consult the website for more informatin.","No fixed timings for the university"],
+         "context_set": ""
+        }
+   ]
+}
